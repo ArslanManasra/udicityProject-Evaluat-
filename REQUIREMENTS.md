@@ -1,23 +1,23 @@
 # Project Requirements:
 
-### Your project must:
+### The project should:
 
-- [ x ] Be set up with Webpack, Express, Node, and Sass, and Service Workers
+- [ x ] Be configured with Webpack, Express, Node.js, Sass, and Service Workers.
 
-- [ x ] Have separate dev and prod configurations for Webpack
+- [ x ] Include separate Webpack configurations for development and production environments.
 
-- [ x ] Have the developer environment set up with the Webpack dev server
+- [ x ] Have a developer environment set up with the Webpack development server.
 
-- [ x ] Have a minimum of one form field
+- [ x ] Contain at least one form field.
 
-- [ x ] Make one request to the meaningcloud API
+- [ x ] Make a request to the MeaningCloud API.
 
-- [ x ] Use Sass for styling
+- [ x ] Use Sass for styling purposes.
 
-- [ x ] Minify js and styles in the production environment
+- [ x ] Minify JavaScript and styles in the production build.
 
-- [ x ] Response from the API must be added to the view for a user to see
+- [ x ] Display the API response on the user interface.
 
-- [ x ] Be able to show content offline
+- [ x ] Support offline content access.
 
 All of these requirements are explained throughout the course. Specifics on setting up the Aylien API are found in the README file of this repo.
