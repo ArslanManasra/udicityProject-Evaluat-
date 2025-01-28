@@ -10,7 +10,7 @@ function handleSubmit(event) {
     postData('http://localhost:8081/api', {url: formText})
 
     .then(function(res) {
-        document.getElementById('polarity').innerHTML = 'Polarity: '+polarityChecker(res.score_tag);
+        document.getElementById('polarity').innerHTML = 'Polarity: '+convertPolarity(res.score_tag);
         document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`;
         document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`;
         document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`;
@@ -42,7 +42,7 @@ const postData = async (url = "", data = {}) => {
 };
 
 // API response output (https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/response)
-const polarityChecker = (score) => {
+const convertPolarity = (score) => {
     let display;
     switch (score){
         case 'P+':
@@ -67,4 +67,4 @@ const polarityChecker = (score) => {
 }
 
 export { handleSubmit }
-export { polarityChecker }
+export { convertPolarity }
